@@ -41,6 +41,11 @@ important concepts to help understanding the internals of the SDK:
 
 ## System Requirements
 
+Using the emsdk pre-compiled packages requires only the minimal set of
+dependenencies lists below.  When building from source a wider set of tools
+include git, cmake, and a host compiler are required. See:
+https://emscripten.org/docs/building_from_source/toolchain_what_is_needed.html.
+
 ### Mac OS X
 
 - `python`: Version 2.7.0 or above.
@@ -49,15 +54,11 @@ important concepts to help understanding the internals of the SDK:
   installed. To open java, you need a Java SE 6 runtime. Would you like to
   install one now?" that will automatically download a Java runtime to the
   system.
-- `cmake`: Only needed for compiling packages from source.
-- `git`: Only needed for compiling packages from source.
 
 ### Linux
 
 - `python`: Version 2.7.0 or above.
 - `java`: For running closure compiler (optional)
-- `git`: Only needed for compiling packages from source.
-- `cmake`: Only needed for compiling packages from source.
 
 The emsdk pre-compiled binaries are built aginst Ubuntu/Xenial 16.04 LTS and
 therefore depend on system libraryes compatiable with versions of `glibc` and
@@ -67,11 +68,6 @@ you may not be able to use the pre-compiled binaries packages.
 ### Windows
 
 - `java`: For running closure compiler (optional)
-- `git`: Only needed for compiling packages from source.   Git can be installed
-  via emsdk by typing "emsdk install git-1.9.4"
-- `cmake`: Only needed for compiling packages from source.
-- `Visual Studio`: Only needed for compiling packages from source.  Visual
-  Studio can be installed from https://www.visualstudio.com.
 
 ## Uninstalling the Emscripten SDK
 
